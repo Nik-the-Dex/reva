@@ -21,6 +21,7 @@ public class RobotContainer {
 
     private final double trackWidth = 0.6; // e.g., 24 inches Frame size
     private final double wheelBase = 0.6;
+    
 
     private final SwerveDriveKinematics m_kinematics = new SwerveDriveKinematics(
         new Translation2d(wheelBase / 2.0, trackWidth / 2.0),  // Front Left
@@ -37,10 +38,13 @@ public class RobotContainer {
         new ModuleIOTalonFX(5, 6, 11), // Back Left Module IDs
         new ModuleIOTalonFX(7, 8, 12), // Back Right Module IDs
         m_kinematics
+
+        
     );
 
     public RobotContainer() {
         configureBindings();
+        
     }
 
     private void configureBindings() {
