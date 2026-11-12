@@ -32,7 +32,7 @@ public class RobotContainer {
 
     
     private final Drive m_drive = new Drive(
-        new GyroIOPigeon2(0) {}, 
+        new GyroIOPigeon2() {}, 
         new ModuleIOTalonFX(1, 2, 9),  // Front Left Module IDs
         new ModuleIOTalonFX(3, 4, 10), // Front Right Module IDs
         new ModuleIOTalonFX(5, 6, 11), // Back Left Module IDs
